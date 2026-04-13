@@ -1,0 +1,41 @@
+[1.144s] Invoking command in '/home/nomaan78/meihua_ws/src/meihua_description': PYTHONPATH=/home/nomaan78/meihua_ws/build/meihua_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nomaan78/meihua_ws/install/meihua_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/meihua_description build --build-base /home/nomaan78/meihua_ws/build/meihua_description/build install --record /home/nomaan78/meihua_ws/build/meihua_description/install.log --single-version-externally-managed install_data
+[1.542s] running egg_info
+[1.543s] creating ../../build/meihua_description/meihua_description.egg-info
+[1.547s] writing ../../build/meihua_description/meihua_description.egg-info/PKG-INFO
+[1.548s] writing dependency_links to ../../build/meihua_description/meihua_description.egg-info/dependency_links.txt
+[1.548s] writing entry points to ../../build/meihua_description/meihua_description.egg-info/entry_points.txt
+[1.549s] writing requirements to ../../build/meihua_description/meihua_description.egg-info/requires.txt
+[1.549s] writing top-level names to ../../build/meihua_description/meihua_description.egg-info/top_level.txt
+[1.550s] writing manifest file '../../build/meihua_description/meihua_description.egg-info/SOURCES.txt'
+[1.552s] reading manifest file '../../build/meihua_description/meihua_description.egg-info/SOURCES.txt'
+[1.554s] writing manifest file '../../build/meihua_description/meihua_description.egg-info/SOURCES.txt'
+[1.554s] running build
+[1.554s] running build_py
+[1.554s] creating /home/nomaan78/meihua_ws/build/meihua_description/build
+[1.555s] creating /home/nomaan78/meihua_ws/build/meihua_description/build/lib
+[1.556s] creating /home/nomaan78/meihua_ws/build/meihua_description/build/lib/meihua_description
+[1.556s] copying meihua_description/__init__.py -> /home/nomaan78/meihua_ws/build/meihua_description/build/lib/meihua_description
+[1.557s] running install
+[1.558s] running install_lib
+[1.559s] creating /home/nomaan78/meihua_ws/install/meihua_description/lib/python3.10/site-packages/meihua_description
+[1.560s] copying /home/nomaan78/meihua_ws/build/meihua_description/build/lib/meihua_description/__init__.py -> /home/nomaan78/meihua_ws/install/meihua_description/lib/python3.10/site-packages/meihua_description
+[1.562s] byte-compiling /home/nomaan78/meihua_ws/install/meihua_description/lib/python3.10/site-packages/meihua_description/__init__.py to __init__.cpython-310.pyc
+[1.565s] running install_data
+[1.565s] creating /home/nomaan78/meihua_ws/install/meihua_description/share/ament_index
+[1.566s] creating /home/nomaan78/meihua_ws/install/meihua_description/share/ament_index/resource_index
+[1.567s] creating /home/nomaan78/meihua_ws/install/meihua_description/share/ament_index/resource_index/packages
+[1.568s] copying resource/meihua_description -> /home/nomaan78/meihua_ws/install/meihua_description/share/ament_index/resource_index/packages
+[1.568s] copying package.xml -> /home/nomaan78/meihua_ws/install/meihua_description/share/meihua_description
+[1.568s] creating /home/nomaan78/meihua_ws/install/meihua_description/share/meihua_description/launch
+[1.569s] copying launch/display.launch.py -> /home/nomaan78/meihua_ws/install/meihua_description/share/meihua_description/launch
+[1.570s] copying launch/simulation.launch.py -> /home/nomaan78/meihua_ws/install/meihua_description/share/meihua_description/launch
+[1.571s] copying launch/spawn_robot.launch.py -> /home/nomaan78/meihua_ws/install/meihua_description/share/meihua_description/launch
+[1.572s] copying launch/rsp.launch.py -> /home/nomaan78/meihua_ws/install/meihua_description/share/meihua_description/launch
+[1.573s] creating /home/nomaan78/meihua_ws/install/meihua_description/share/meihua_description/urdf
+[1.574s] copying urdf/meihua_bot.urdf -> /home/nomaan78/meihua_ws/install/meihua_description/share/meihua_description/urdf
+[1.575s] creating /home/nomaan78/meihua_ws/install/meihua_description/share/meihua_description/worlds
+[1.575s] running install_egg_info
+[1.580s] Copying ../../build/meihua_description/meihua_description.egg-info to /home/nomaan78/meihua_ws/install/meihua_description/lib/python3.10/site-packages/meihua_description-0.0.0-py3.10.egg-info
+[1.584s] running install_scripts
+[1.620s] writing list of installed files to '/home/nomaan78/meihua_ws/build/meihua_description/install.log'
+[1.671s] Invoked command in '/home/nomaan78/meihua_ws/src/meihua_description' returned '0': PYTHONPATH=/home/nomaan78/meihua_ws/build/meihua_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nomaan78/meihua_ws/install/meihua_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/meihua_description build --build-base /home/nomaan78/meihua_ws/build/meihua_description/build install --record /home/nomaan78/meihua_ws/build/meihua_description/install.log --single-version-externally-managed install_data

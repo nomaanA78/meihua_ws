@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<robot name="fgc_robot_perfect_sandwich">
+
+  <material name="aluminum"><color rgba="0.75 0.75 0.75 0.5"/></material>
+  <material name="pnuematic_white"><color rgba="1.0 1.0 1.0 1"/></material>
+  <material name="fixed_black"><color rgba="0.1 0.1 0.1 1"/></material>
+
+  <link name="base_link">
+    <visual>
+      <geometry><box size="0.9 0.35 0.2"/></geometry>
+      <material name="aluminum"/>
+      
+      <origin xyz="0 0 0.1"/> 
+    </visual>
+    <collision>
+      <geometry><box size="0.9 0.35 0.2"/></geometry>
+      <origin xyz="0 0 0.1"/>
+    </collision>
+    <inertial>
+      <mass value="15.0"/>
+      <origin xyz="0 0 0.1"/>
+      <inertia ixx="0.20" ixy="0" ixz="0" iyy="1.06" iyz="0" izz="1.16"/>
+    </inertial>
+  </link>
+
+  <link name="b_FL_outer">
+    <visual><geometry><cylinder length="0.04" radius="0.04"/></geometry><origin rpy="1.5708 0 0"/><material name="fixed_black"/></visual>
+    <collision><geometry><cylinder length="0.04" radius="0.04"/></geometry><origin rpy="1.5708 0 0"/></collision>
+    <inertial><mass value="0.5"/><origin rpy="1.5708 0 0"/><inertia ixx="0.0002" ixy="0" ixz="0" iyy="0.0002" iyz="0" izz="0.0004"/></inertial>
+  </link>
+  <joint name="j_b_FL_outer" type="continuous"><parent link="base_link"/><child link="b_FL_outer"/><origin xyz="0.42 0.2 0"/><axis xyz="0 1 0"/></joint>
+
+  <link name="b_FL_inner">
+    <visual><geometry><cylinder length="0.04" radius="0.04"/></geometry><origin rpy="1.5708 0 0"/><material name="fixed_black"/></visual>
+    <collision><geometry><cylinder length="0.04" radius="0.04"/></geometry><origin rpy="1.5708 0 0"/></collision>
+    <inertial><mass value="0.5"/><origin rpy="1.5708 0 0"/><inertia ixx="0.0002" ixy="0" ixz="0" iyy="0.0002" iyz="0" izz="0.0004"/></inertial>
+  </link>
+  <joint name="j_b_FL_inner" type="continuous"><parent link="base_link"/><child link="b_FL_inner"/><origin xyz="0.18 0.2 0"/><axis xyz="0 1 0"/></joint>
+
+  <link name="b_FR_outer">
+    <visual><geometry><cylinder length="0.04" radius="0.04"/></geometry><origin rpy="1.5708 0 0"/><material name="fixed_black"/></visual>
+    <collision><geometry><cylinder length="0.04" radius="0.04"/></geometry><origin rpy="1.5708 0 0"/></collision>
+    <inertial><mass value="0.5"/><origin rpy="1.5708 0 0"/><inertia ixx="0.0002" ixy="0" ixz="0" iyy="0.0002" iyz="0" izz="0.0004"/></inertial>
+  </link>
+  <joint name="j_b_FR_outer" type="continuous"><parent link="base_link"/><child link="b_FR_outer"/><origin xyz="0.42 -0.2 0"/><axis xyz="0 1 0"/></joint>
+
+  <link name="b_FR_inner">
+    <visual><geometry><cylinder length="0.04" radius="0.04"/></geometry><origin rpy="1.5708 0 0"/><material name="fixed_black"/></visual>
+    <collision><geometry><cylinder length="0.04" radius="0.04"/></geometry><origin rpy="1.5708 0 0"/></collision>
+    <inertial><mass value="0.5"/><origin rpy="1.5708 0 0"/><inertia ixx="0.0002" ixy="0" ixz="0" iyy="0.0002" iyz="0" izz="0.0004"/></inertial>
+  </link>
+  <joint name="j_b_FR_inner" type="continuous"><parent link="base_link"/><child link="b_FR_inner"/><origin xyz="0.18 -0.2 0"/><axis xyz="0 1 0"/></joint>
+
+  <link name="b_RL_outer">
+    <visual><geometry><cylinder length="0.04" radius="0.04"/></geometry><origin rpy="1.5708 0 0"/><material name="fixed_black"/></visual>
+    <collision><geometry><cylinder length="0.04" radius="0.04"/></geometry><origin rpy="1.5708 0 0"/></collision>
+    <inertial><mass value="0.5"/><origin rpy="1.5708 0 0"/><inertia ixx="0.0002" ixy="0" ixz="0" iyy="0.0002" iyz="0" izz="0.0004"/></inertial>
+  </link>
+  <joint name="j_b_RL_outer" type="continuous"><parent link="base_link"/><child link="b_RL_outer"/><origin xyz="-0.42 0.2 0"/><axis xyz="0 1 0"/></joint>
+
+  <link name="b_RL_inner">
+    <visual><geometry><cylinder length="0.04" radius="0.04"/></geometry><origin rpy="1.5708 0 0"/><material name="fixed_black"/></visual>
+    <collision><geometry><cylinder length="0.04" radius="0.04"/></geometry><origin rpy="1.5708 0 0"/></collision>
+    <inertial><mass value="0.5"/><origin rpy="1.5708 0 0"/><inertia ixx="0.0002" ixy="0" ixz="0" iyy="0.0002" iyz="0" izz="0.0004"/></inertial>
+  </link>
+  <joint name="j_b_RL_inner" type="continuous"><parent link="base_link"/><child link="b_RL_inner"/><origin xyz="-0.18 0.2 0"/><axis xyz="0 1 0"/></joint>
+
+  <link name="b_RR_outer">
+    <visual><geometry><cylinder length="0.04" radius="0.04"/></geometry><origin rpy="1.5708 0 0"/><material name="fixed_black"/></visual>
+    <collision><geometry><cylinder length="0.04" radius="0.04"/></geometry><origin rpy="1.5708 0 0"/></collision>
+    <inertial><mass value="0.5"/><origin rpy="1.5708 0 0"/><inertia ixx="0.0002" ixy="0" ixz="0" iyy="0.0002" iyz="0" izz="0.0004"/></inertial>
+  </link>
+  <joint name="j_b_RR_outer" type="continuous"><parent link="base_link"/><child link="b_RR_outer"/><origin xyz="-0.42 -0.2 0"/><axis xyz="0 1 0"/></joint>
+
+  <link name="b_RR_inner">
+    <visual><geometry><cylinder length="0.04" radius="0.04"/></geometry><origin rpy="1.5708 0 0"/><material name="fixed_black"/></visual>
+    <collision><geometry><cylinder length="0.04" radius="0.04"/></geometry><origin rpy="1.5708 0 0"/></collision>
+    <inertial><mass value="0.5"/><origin rpy="1.5708 0 0"/><inertia ixx="0.0002" ixy="0" ixz="0" iyy="0.0002" iyz="0" izz="0.0004"/></inertial>
+  </link>
+  <joint name="j_b_RR_inner" type="continuous"><parent link="base_link"/><child link="b_RR_inner"/><origin xyz="-0.18 -0.2 0"/><axis xyz="0 1 0"/></joint>
+
+  <link name="f_pneu_frame">
+    <visual><geometry><box size="0.02 0.45 0.02"/></geometry><material name="fixed_black"/></visual>
+    <collision><geometry><box size="0.02 0.45 0.02"/></geometry></collision>
+    <inertial><mass value="1.0"/><inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/></inertial>
+  </link>
+  <joint name="front_pneumatic_cylinder" type="prismatic">
+    <parent link="base_link"/><child link="f_pneu_frame"/>
+    <origin xyz="0.30 0 0.1"/><axis xyz="0 0 1"/>
+    <limit lower="-0.12" upper="0.05" effort="1000" velocity="0.5"/> 
+  </joint>
+
+  <link name="r_pneu_frame">
+    <visual><geometry><box size="0.02 0.45 0.02"/></geometry><material name="fixed_black"/></visual>
+    <collision><geometry><box size="0.02 0.45 0.02"/></geometry></collision>
+    <inertial><mass value="1.0"/><inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/></inertial>
+  </link>
+  <joint name="rear_pneumatic_cylinder" type="prismatic">
+    <parent link="base_link"/><child link="r_pneu_frame"/>
+    <origin xyz="-0.30 0 0.1"/><axis xyz="0 0 1"/>
+    <limit lower="-0.12" upper="0.05" effort="1000" velocity="0.5"/> 
+  </joint>
+
+  <link name="w_FL_drive">
+    <visual><geometry><cylinder length="0.045" radius="0.04"/></geometry><origin rpy="1.5708 0 0"/><material name="pnuematic_white"/></visual>
+    <collision><geometry><cylinder length="0.045" radius="0.04"/></geometry><origin rpy="1.5708 0 0"/></collision>
+    <inertial><mass value="0.7"/><origin rpy="1.5708 0 0"/><inertia ixx="0.0004" ixy="0" ixz="0" iyy="0.0004" iyz="0" izz="0.0006"/></inertial>
+  </link>
+  <joint name="j_FL_drive" type="continuous"><parent link="f_pneu_frame"/><child link="w_FL_drive"/><origin xyz="0 0.2 -0.105"/><axis xyz="0 1 0"/></joint>
+
+  <link name="w_FR_drive">
+    <visual><geometry><cylinder length="0.045" radius="0.04"/></geometry><origin rpy="1.5708 0 0"/><material name="pnuematic_white"/></visual>
+    <collision><geometry><cylinder length="0.045" radius="0.04"/></geometry><origin rpy="1.5708 0 0"/></collision>
+    <inertial><mass value="0.7"/><origin rpy="1.5708 0 0"/><inertia ixx="0.0004" ixy="0" ixz="0" iyy="0.0004" iyz="0" izz="0.0006"/></inertial>
+  </link>
+  <joint name="j_FR_drive" type="continuous"><parent link="f_pneu_frame"/><child link="w_FR_drive"/><origin xyz="0 -0.2 -0.105"/><axis xyz="0 1 0"/></joint>
+
+  <link name="w_RL_drive">
+    <visual><geometry><cylinder length="0.045" radius="0.04"/></geometry><origin rpy="1.5708 0 0"/><material name="pnuematic_white"/></visual>
+    <collision><geometry><cylinder length="0.045" radius="0.04"/></geometry><origin rpy="1.5708 0 0"/></collision>
+    <inertial><mass value="0.7"/><origin rpy="1.5708 0 0"/><inertia ixx="0.0004" ixy="0" ixz="0" iyy="0.0004" iyz="0" izz="0.0006"/></inertial>
+  </link>
+  <joint name="j_RL_drive" type="continuous"><parent link="r_pneu_frame"/><child link="w_RL_drive"/><origin xyz="0 0.2 -0.105"/><axis xyz="0 1 0"/></joint>
+
+  <link name="w_RR_drive">
+    <visual><geometry><cylinder length="0.045" radius="0.04"/></geometry><origin rpy="1.5708 0 0"/><material name="pnuematic_white"/></visual>
+    <collision><geometry><cylinder length="0.045" radius="0.04"/></geometry><origin rpy="1.5708 0 0"/></collision>
+    <inertial><mass value="0.7"/><origin rpy="1.5708 0 0"/><inertia ixx="0.0004" ixy="0" ixz="0" iyy="0.0004" iyz="0" izz="0.0006"/></inertial>
+  </link>
+  <joint name="j_RR_drive" type="continuous"><parent link="r_pneu_frame"/><child link="w_RR_drive"/><origin xyz="0 -0.2 -0.105"/><axis xyz="0 1 0"/></joint>
+
+  <gazebo>
+    <plugin name="diff_drive" filename="libgazebo_ros_diff_drive.so">
+      <ros><namespace>/</namespace></ros>
+      <num_wheel_pairs>2</num_wheel_pairs>
+      
+      <left_joint>j_FL_drive</left_joint>
+      <right_joint>j_FR_drive</right_joint>
+      
+      <left_joint>j_RL_drive</left_joint>
+      <right_joint>j_RR_drive</right_joint>
+
+      <wheel_separation>0.4</wheel_separation>
+      <wheel_diameter>0.08</wheel_diameter>
+      <max_wheel_torque>20</max_wheel_torque>
+      <max_wheel_acceleration>1.0</max_wheel_acceleration>
+      <publish_odom>true</publish_odom>
+      <publish_odom_tf>true</publish_odom_tf>
+      <publish_wheel_tf>true</publish_wheel_tf>
+      <odometry_frame>odom</odometry_frame>
+      <robot_base_frame>base_link</robot_base_frame>
+    </plugin>
+  </gazebo>
+
+  <gazebo reference="w_FL_drive"><mu1>1.5</mu1><mu2>0.01</mu2><fdir1>1 0 0</fdir1></gazebo>
+  <gazebo reference="w_FR_drive"><mu1>1.5</mu1><mu2>0.01</mu2><fdir1>1 0 0</fdir1></gazebo>
+  <gazebo reference="w_RL_drive"><mu1>1.5</mu1><mu2>0.01</mu2><fdir1>1 0 0</fdir1></gazebo>
+  <gazebo reference="w_RR_drive"><mu1>1.5</mu1><mu2>0.01</mu2><fdir1>1 0 0</fdir1></gazebo>
+
+  <gazebo reference="b_FL_outer"><mu1>0.1</mu1><mu2>0.1</mu2></gazebo>
+  <gazebo reference="b_FR_outer"><mu1>0.1</mu1><mu2>0.1</mu2></gazebo>
+  <gazebo reference="b_RL_outer"><mu1>0.1</mu1><mu2>0.1</mu2></gazebo>
+  <gazebo reference="b_RR_outer"><mu1>0.1</mu1><mu2>0.1</mu2></gazebo>
+
+</robot>

@@ -1,0 +1,1 @@
+ros2 launch urdf_tutorial display.launch.py model:=/home/nomaan78/meihua_ws/src/meihua_description/urdf/meihua_bot.urdf
